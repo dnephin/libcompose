@@ -1,0 +1,77 @@
+package: main
+import:
+  - package: github.com/Sirupsen/logrus
+    ref:     26709e2714106fb8ad40b773b711ebce25b78914
+  - package: github.com/codegangsta/cli
+    ref:     6086d7927ec35315964d9fea46df6c04e6d697c1
+  - package: github.com/docker/distribution
+    ref:     9038e48c3b982f8e82281ea486f078a73731ac4e
+  - package: github.com/docker/docker
+    ref:     f39987afe8d611407887b3094c03d6ba6a766a67
+    subpackages:
+      - api
+      - autogen/dockerversion
+      - cliconfig
+      - daemon/network
+      - graph/tags
+      - image
+      - opts
+      - pkg/archive
+      - pkg/fileutils
+      - pkg/homedir
+      - pkg/httputils
+      - pkg/ioutils
+      - pkg/jsonmessage
+      - pkg/mflag
+      - pkg/nat
+      - pkg/parsers
+      - pkg/pools
+      - pkg/promise
+      - pkg/random
+      - pkg/stdcopy
+      - pkg/stringid
+      - pkg/symlink
+      - pkg/system
+      - pkg/tarsum
+      - pkg/term
+      - pkg/timeutils
+      - pkg/tlsconfig
+      - pkg/ulimit
+      - pkg/units
+      - pkg/urlutil
+      - pkg/useragent
+      - pkg/version
+      - registry
+      - runconfig
+      - utils
+      - volume
+  - package: github.com/docker/libtrust
+    ref:     9cbd2a1374f46905c68a4eb3694a130610adc62a
+  - package: github.com/flynn/go-shlex
+    ref:     3f9db97f856818214da2e1057f8ad84803971cff
+  - package: github.com/gorilla/context
+    ref:     215affda49addc4c8ef7e2534915df2c8c35c6cd
+  - package: github.com/gorilla/mux
+    ref:     f15e0c49460fd49eebe2bcc8486b05d1bef68d3a
+  - package: github.com/opencontainers/runc
+    ref:     b40c7901845dcec5950ecb37cb9de178fc2c0604
+    subpackages:
+      - libcontainer/user
+  - package: github.com/samalba/dockerclient
+    ref:     68832c185bb6304fed26a986891fd27b6ed17987
+  - package: github.com/stretchr/testify
+    ref:     7e4a149930b09fe4c2b134c50ce637457ba6e966
+    subpackages:
+      - assert
+  - package: golang.org/x/crypto
+    ref:     4d48e5fa3d62b5e6e71260571bf76c767198ca02
+    subpackages:
+      - ssh/terminal
+  - package: golang.org/x/net
+    ref:     3a29182c25eeabbaaf94daaeecbc7823d86261e7
+    subpackages:
+      - context
+  - package: gopkg.in/check.v1
+    ref:     11d3bc7aa68e238947792f30573146a3231fc0f1
+  - package: gopkg.in/yaml.v2
+    ref:     49c95bdc21843256fb6c4e0d370a05f24a0bf213
